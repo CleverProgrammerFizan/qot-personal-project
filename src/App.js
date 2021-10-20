@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useState } from 'react/cjs/react.development'
 
 import './App.css'
+import Header from './Header';
 
 const App = () => {
   const [quotes, setQuotes] = useState('');
@@ -22,7 +23,10 @@ const App = () => {
 
   return (
     <div className="App">
-     <h1>Random Qoute Generator</h1>
+      <div className="header">
+        <Header />
+      </div>
+      
       <div className="quote__card">
         <div className="quotes">
             <p>{quotes.text}</p>
