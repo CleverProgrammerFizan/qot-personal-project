@@ -4,7 +4,7 @@ import { useState } from 'react/cjs/react.development'
 import './App.css'
 import Header from './Header';
 
-const App = () => {
+  const App = () => {
   const [quotes, setQuotes] = useState('');
 
   const getQuotes = () => {
@@ -21,6 +21,7 @@ const App = () => {
   }, []);
 
 
+
   return (
     <div className="App">
       <div className="header">
@@ -35,6 +36,7 @@ const App = () => {
         
         <div className="btn">
           <button onClick={getQuotes}>Get a new qoute</button>
+          <button onClick={() =>  navigator.clipboard.writeText(quotes.text)}>Copy Text</button>
         </div>
       </div>
     </div>

@@ -50,7 +50,14 @@
   
 }
 
+@media screen and (max-width: 460px) {
+  .quote__card {
+      width: 300px !important;
+      min-width: 300px;
+  }
+}
 
+  
 
 p {
   padding: 10px;
@@ -62,4 +69,5 @@ button {
   border: none;
   font-weight: 800;
   cursor: pointer;
+  margin-left: 10px;
 }
