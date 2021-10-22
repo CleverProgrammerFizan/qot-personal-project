@@ -71,3 +71,12 @@ button {
   cursor: pointer;
   margin-left: 10px;
 }
+
+
+@media screen and (max-width: 460px) {
+  button {
+     height: 20px;
+     font-size: 10px;
+     z-index: 100;
+  }
+}
