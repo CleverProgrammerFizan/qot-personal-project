@@ -61,6 +61,11 @@
 
 p {
   padding: 10px;
+  font-weight: 600;
+}
+
+.author {
+  font-weight: 500;
 }
 
 button {

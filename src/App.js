@@ -30,8 +30,8 @@ import Header from './Header';
       
       <div className="quote__card">
         <div className="quotes">
-            <p>{quotes.text}</p>
-            <p>- {quotes.author}</p> 
+            <p>" {quotes.text} "</p>
+            <p className='author'>~ {quotes.author}</p>
         </div>
         
         <div className="btn">
